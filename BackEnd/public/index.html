@@ -10,5 +10,32 @@
     <input type=text name=card[diagnosis] >
     <p><input type="submit" value="Submit"></p>
 </form>
+<b>-----------------------------------------------</b>
+<b>Форма регистрации</b>
+<form action="./api/reg/" method=post>
+    <input type=text name=user[username] >
+    <input type=text name=user[password] >
+    <p><input type="submit" value="Submit"></p>
+</form>
+<b>-----------------------------------------------</b>
+<b>Форма авторизации</b>
+<form action="./login/" method=post>
+    <input type=text name=username >
+    <input type=password name=password >
+    <p><input type="submit" value="Submit"></p>
+</form>
+<b>-----------------------------------------------</b>
+<b>Форма авторизации</b>
+<form action="./oauth/token" method=post>
+    <input type=hidden name=grant_type value="password">
+    <input type=text name=username >
+    <input type=password name=password >
+    <p><input type="submit" value="Submit"></p>
+</form>
+
+<form action="./logout/" method=get>
+    <p><input type="submit" value="logout"></p>
+</form>
+
 </body>
 </html>
